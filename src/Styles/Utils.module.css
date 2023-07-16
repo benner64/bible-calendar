@@ -1,0 +1,11 @@
+.CenterRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.FlexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
