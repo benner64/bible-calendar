@@ -1,6 +1,8 @@
+import React from 'react';
 import { Daily } from '../../Types/Daily';
 import { CenterRow } from '../../Styles/Utils.module.css';
-import React from 'react';
+import Morning from '../../Images/morning.svg';
+import Evening from '../../Images/evening.svg'; 
 
 type DailyVersesProp = {
   DailyVers: Daily
@@ -14,10 +16,10 @@ export default function DailyVersesComponent({ DailyVers }: DailyVersesProp) {
           
           <div className={CenterRow}>
             <ul>
-              <h4 style={{'textAlign' : 'center'}}>Morning veres</h4>
+              <h3 style={{'textAlign' : 'center'}}>Morning veres <img src={Morning} style={{'height' : '1.25rem'}}/></h3>
               <li>{DailyVers.readings.morning.first}</li>
               <li>{DailyVers.readings.morning.second}</li>
-              <h4 style={{'textAlign' : 'center'}}>Evening veres</h4>
+              <h3 style={{'textAlign' : 'center'}}>Evening veres <img src={Evening} style={{'height' : '1.25rem'}}/></h3>
               <li>{DailyVers.readings.evening.first}</li>
               <li>{DailyVers.readings.evening.second}</li>
             </ul>
