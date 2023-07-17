@@ -21,6 +21,7 @@ export default function Home() {
     return (
         <LayoutComponent>
             <BibleVersesComponent Verses={bibleVerses} SetVerses={setBibleVerses}/>
+            
         </LayoutComponent>
     );
 }
