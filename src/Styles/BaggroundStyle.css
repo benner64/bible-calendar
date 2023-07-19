@@ -1,0 +1,5 @@
+body {
+    height: 100vh;
+    /* background: repeating-radial-gradient(circle at top left, #FAF3F0 1%, #DBC4F0 2% ); */
+    background: repeating-linear-gradient(to top right, rgba(219, 196, 240, 0.5) 1rem 1rem, #FAF3F0 2rem 3rem);
+}

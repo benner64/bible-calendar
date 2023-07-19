@@ -1,0 +1,11 @@
+.LowerZ {
+    z-index: -1;
+}
+
+.Content {
+    background-color: #FAF3F0;
+    margin: 1rem; 
+    padding: 1rem; 
+    border-radius: 2rem 2rem 2rem 2rem; 
+    box-shadow: inset 0rem 0rem 1rem 0.3rem rgba(115, 169, 173, 0.3);
+}
