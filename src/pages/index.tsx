@@ -24,22 +24,22 @@ export default function Home() {
             });
     }, []);
 
-    useEffect(() => {
-        fetch(`http://calapi.inadiutorium.cz/api/v0/en/calendars/default/${day.getFullYear()}/${day.getMonth() + 1}/${day.getDate()}`)
-            .then((res) => {
-                return res.json();
-            })
-            .then((data: LiturgicalDay) => {
-                setLiturgicalDay(data)
-                console.log(data, day);
+    // useEffect(() => {
+    //     fetch(`http://calapi.inadiutorium.cz/api/v0/en/calendars/default/${day.getFullYear()}/${day.getMonth() + 1}/${day.getDate()}`)
+    //         .then((res) => {
+    //             return res.json();
+    //         })
+    //         .then((data: LiturgicalDay) => {
+    //             setLiturgicalDay(data)
+    //             console.log(data, day);
                 
-            });
-    }, [ bibleVerses ]);
+    //         });
+    // }, [ bibleVerses ]);
 
     return (
         <LayoutComponent>
             <BibleVersesComponent Verses={bibleVerses} SetVerses={setBibleVerses} SetDay={setDay}/>
-            <DailyCathEventComponent day={liturgicalDay}/>
+            {/* <DailyCathEventComponent day={liturgicalDay}/> */}
         </LayoutComponent>
     );
 }
