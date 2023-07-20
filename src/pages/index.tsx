@@ -20,7 +20,7 @@ export default function Home() {
                 return res.json();
             })
             .then((data: BibleVerses) => {
-                setBibleVerses(data);
+                setBibleVerses(data); 
             });
     }, []);
 
